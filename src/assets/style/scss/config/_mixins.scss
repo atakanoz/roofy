@@ -1,0 +1,20 @@
+/**
+ * = Mixins
+ *
+ * Add your mixins & keep it clean.
+ *
+ * ========================================================================= */
+
+@mixin add-font($font-name, $font-file-name, $font-weight:normal) {
+  @font-face {
+    font-family: $font-name;
+    src: url('dist/assets/fonts/'+ $font-file-name +'.eot');
+    src: url('dist/assets/fonts/'+ $font-file-name +'.eot?#iefix') format('embedded-opentype'),
+         url('dist/assets/fonts/'+ $font-file-name +'.woff2') format('woff2'),
+         url('dist/assets/fonts/'+ $font-file-name +'.woff') format('woff'),
+         url('dist/assets/fonts/'+ $font-file-name +'.ttf') format('truetype'),
+         url('dist/assets/fonts/'+ $font-file-name +'.svg#'+ $font-file-name +'') format('svg');
+    font-weight: $font-weight;
+    font-style: normal;
+  }
+}

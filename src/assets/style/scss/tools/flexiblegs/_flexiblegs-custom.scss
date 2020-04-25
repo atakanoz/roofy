@@ -1,0 +1,42 @@
+@mixin printSizeables($sizeables, $flexiblegs-breakpoint-shortcut) {
+
+  @each $shortcut, $custom-css-info in $sizeables {
+    $values: map-get($custom-css-info, 'values');
+    $codes: map-get($custom-css-info, 'codes');
+
+    @each $value-shortcut, $value in $values {
+      @if not $value { $value: $value-shortcut; }
+      $breakpoint-shortcut: "#{$flexiblegs-breakpoint-shortcut}-";
+
+      .#{$breakpoint-shortcut}#{$shortcut}-#{$value-shortcut} {
+        @each $custom-css, $suffix in $codes {
+          #{$custom-css}: #{$value}#{$suffix} !important;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+@each $flexiblegs-breakpoint-shortcut, $flexiblegs-breakpoint-size in $flexiblegs-breakpoint {
+
+  // Desktop Breakpoint
+  @if $flexiblegs-breakpoint-size == "" {
+
+    @include printSizeables($custom-sizeables, $flexiblegs-breakpoint-shortcut);
+
+  }	
+  
+  // Mobile breakpoints
+  @else { 
+
+	  @media #{$flexiblegs-breakpoint-size} {
+      @include printSizeables($custom-sizeables, $flexiblegs-breakpoint-shortcut);
+    }
+
+  }
+
+}

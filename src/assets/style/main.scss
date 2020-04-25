@@ -1,0 +1,33 @@
+/*!
+Theme Name: Site Name
+Description: Site tagline
+Author: Roofy
+Author URI: Roofy
+Version: 1.0.0
+*/
+
+
+// Setting variables and mixins
+@import "scss/config/_variables";
+@import "scss/config/_mixins";
+@import "scss/config/_animations";
+
+
+// Tools - Make sure these are the latest versions
+@import "scss/tools/normalize/normalize";
+@import "scss/tools/flexiblegs/_flexible-grid-system";
+//@import "scss/tools/slick/slick.scss"; // Uncomment if slider needed (Don't forget calling the JS file in 'functions.php')
+
+
+// Icons
+@import "/_roofy-icons";
+
+
+// Global Components - Add more components if needed
+@import "scss/global/_fonts";
+@import "scss/global/_global";
+@import "scss/global/_header";
+@import "scss/global/_footer";
+
+// Mobile Corrections
+@import "scss/global/_mobile";

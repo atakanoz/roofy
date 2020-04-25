@@ -1,0 +1,151 @@
+/**
+ * = Variables
+ *
+ * Add your variables & keep it clean.
+ *
+ * ========================================================================= */
+
+
+ /*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+ 	* ------- Colors ------- *
+
+ -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+ // Dark Colors
+ $color-dark: #868686;
+ $color-darker: #333333;
+ $color-darkest: #000000;
+
+ // Light Colors
+ $color-light: #FFF;
+ $color-lighter: #FBF9F9;
+ $color-lightest: #FFFFFF;
+
+ // Other Colors
+ $color-lightest-blue: #3EB5F1;
+ $color-light-blue: #00A3FF;
+ $color-blue: #329BD6;
+ $color-dark-blue: #115277;
+ $color-picton-blue: #54C0E8;
+ $color-green: #76BC21;
+ $color-grey: #6F6F6F;
+ $color-light-grey: #DADADA;
+ $color-light-black: #374150;
+ $color-bronze: #CD7F32;
+ $color-silver: #C0C0C0;
+ $color-gold: #FFB800;
+ $color-platinum: #E5E4E3;
+
+ $bg-color: $color-lightest;
+ $header-bg-color: $color-darkest;
+ $footer-bg-color: $color-blue;
+ // Add as many as you need...
+
+
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Sizes ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+$container-width: 1200px;
+
+$header-height: 80px;
+$footer-height: 80px;
+$button-size: 44px; // Buttons and inputs sizes
+
+
+
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Typography ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$primary-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$secondary-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$font-size-smaller: 12px;
+$font-size-small: 14px;
+$font-size: 16px;
+$font-size-large: 18px;
+$font-size-larger: 20px;
+$font-size-largest: 24px;
+
+
+
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Titles ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+$title-color: $color-darkest;
+$title-font-family: $secondary-font-family;
+$title-font-size: $font-size-larger;
+$title-line-height: normal;
+$title-font-weight: bold;
+$title-font: $title-font-weight #{$title-font-size"/"$title-line-height} $title-font-family;
+
+
+
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Texts ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+$text-color: $color-darkest;
+$text-font-family: $primary-font-family;
+$text-font-size: $font-size-small;
+$text-line-height: 1.4;
+$text-font-weight: 400;
+$text-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-family;
+
+
+
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Borders ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+$border-color: $color-dark;
+$border-width: 1px;
+$border-radius: 3px;
+
+
+
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Buttons ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+$button-bg-color: $color-dark;
+$button-text-color: $color-lightest;
+
+$button-border-color: $border-color;
+$button-border-width: $border-width;
+$button-border-radius: $border-radius;
+
+$button-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-family;
+
+
+
+/*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*
+
+	* ------- Inputs ------- *
+
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
+
+$input-bg-color: $color-lightest;
+$input-text-color: $color-darkest;
+
+$input-border-color: $border-color;
+
+$input-border-width: $border-width;
+$input-border-radius: $border-radius;
+
+$input-font: $text-font-weight #{$text-font-size"/"$text-line-height} $text-font-family;

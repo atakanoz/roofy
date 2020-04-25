@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20190801 at Sun Mar 15 00:14:13 2020
+ By Atakan Öz
+</metadata>
+<defs>
+<font id="roofy" horiz-adv-x="512" >
+  <font-face 
+    font-family="roofy-icons"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 9 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="17 0 400 341"
+    underline-thickness="25"
+    underline-position="-50"
+    unicode-range="U+F101-F101"
+  />
+<missing-glyph 
+d="M17 0v341h136v-341h-136zM34 17h102v307h-102v-307z" />
+    <glyph glyph-name=".notdef" 
+d="M17 0v341h136v-341h-136zM34 17h102v307h-102v-307z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="add-outline-2" unicode="&#xf101;" 
+d="M256 336h-16v-288h16h16v288h-16zM400 192v16h-288v-16v-16h288v16z" />
+  </font>
+</defs></svg>

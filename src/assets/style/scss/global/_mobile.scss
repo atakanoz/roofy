@@ -1,0 +1,42 @@
+/**
+ * = Mobile
+ *
+ * Configure your breakpoints & keep it clean.
+ *
+ * ========================================================================= */
+
+/* lg - TABLET LANDSCAPE */
+@media (max-width: 1199px) {
+
+	@import "mobile/lg.scss"; 
+
+}
+
+/* md - TABLET PORTRAIT */
+@media (max-width: 991px) {
+
+	@import "mobile/md.scss";
+
+}
+
+/* sm - MOBILE LANDSCAPE */
+@media (max-width: 767px) {
+
+	@import "mobile/sm.scss";
+
+}
+
+/* xs - MOBILE PORTRAIT */
+@media (max-width: 479px) {
+
+	@import "mobile/xs.scss";
+
+}
+
+/* RETINA FIXES */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+ 	  only screen and (-o-min-device-pixel-ratio: 3/2),
+ 	  only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+
+}

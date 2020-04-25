@@ -1,0 +1,133 @@
+/*! Flexible Grid System 5.6.0 | Settings | Scss | MIT License | dnomak.com/flexiblegs */
+
+$flexiblegs-method: (
+  "css"
+  // "bem"
+);
+$flexiblegs-breakpoint: (
+  "xl" : "",
+  "lg" : "(max-width: 1199px)",
+  "md" : "(max-width: 991px)",
+  "sm" : "(max-width: 767px)",
+  "xs" : "(max-width: 479px)"
+);
+$wrap-col: (
+  "auto", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+);
+$wrap-prop: (
+  "table",
+  "flexbox",
+  "normal",
+  "left",
+  "center",
+  "right",
+  "top",
+  "middle",
+  "bottom",
+  "stretch",
+  "between",
+  "around",
+  "baseline",
+  "reverse",
+  "not-reverse"
+);
+$col-row: (
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+);
+$col-width: ();
+$col-prop: (
+  "hidden",
+  "not-hidden",
+  "first",
+  "not-first",
+  "last",
+  "not-last"
+);
+$wrap-gutter: (
+  0, 8, 16, 24, 40
+);
+$wrap-outside: (
+  0, 8, 16, 24
+);
+
+
+$custom-sizeables: (
+
+  // Margins
+  "mt" : (
+    "values" : (0, 5, 7, 10, 15, 20),
+    "codes"  : (
+      "margin-top" : 'px'
+    )
+	),
+  "mb" : (
+    "values" : (0, 5, 7, 10, 15, 20),
+    "codes"  : (
+      "margin-bottom" : 'px'
+    )
+	),
+  "marginy" : (
+    "values" : (0, 5, 7, 10, 15, 20),
+    "codes"  : (
+      "margin-top" : 'px',
+      "margin-bottom" : 'px',
+    )
+  ),
+  "marginx" : (
+    "values" : (0, 5, 7, 10, 15, 20),
+    "codes"  : (
+      "margin-left" : 'px',
+      "margin-right" : 'px',
+    )
+  ),
+
+
+  // Paddings
+  "pt" : (
+    "values" : (0, 5, 7, 10, 15, 20),
+    "codes"  : (
+      "padding-top" : 'px'
+    )
+	),
+  "pb" : (
+    "values" : (0, 5, 7, 10, 15, 20),
+    "codes"  : (
+      "padding-bottom" : 'px'
+    )
+	),
+  "paddingy" : (
+    "values" : (0, 5, 7, 10, 15, 20),
+    "codes"  : (
+      "padding-top" : 'px',
+      "padding-bottom" : 'px',
+    )
+	),
+  "paddingx" : (
+    "values" : (0, 5, 7, 10, 15, 20),
+    "codes"  : (
+      "padding-left" : 'px',
+      "padding-right" : 'px',
+    )
+	),
+  // Text Styles
+  "fw" : (
+    "values" : (normal, bold),
+    "codes"  : (
+			"font-weight"
+		)
+	),
+
+  "ta" : (
+    "values" : (left, right, center, justify),
+    "codes"  : (
+			"text-align"
+		)
+	),
+
+
+);
+
+
+@import "_flexiblegs-scss";
+@import "_flexiblegs-scss-plus";
+@import "_flexiblegs-custom";

@@ -1,0 +1,38 @@
+{
+  "name": "roofy",
+  "version": "1.0.0",
+  "description": "To preview this repository properly, follow these directions:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Atakan Oz",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-csscomb": "^4.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-html-build": "^0.7.1",
+    "grunt-includes": "^1.1.0",
+    "grunt-parallel": "^0.5.1",
+    "grunt-processhtml": "^0.4.2",
+    "grunt-remfallback": "0.0.5",
+    "grunt-sass": "^3.1.0",
+    "grunt-terser": "^0.1.0",
+    "grunt-uncss": "^0.8.6",
+    "grunt-webfont": "^1.7.2",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^4.12.0",
+    "terser-webpack-plugin": "^2.1.0"
+  },
+  "dependencies": {}
+}

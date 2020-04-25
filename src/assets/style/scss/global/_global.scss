@@ -1,0 +1,286 @@
+/**
+ * = Global
+ *
+ * Add your global styles for your pages and keep it clean.
+ *
+ * ========================================================================= */
+
+html, body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	color: $text-color;
+	font: $text-font;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	* {
+		outline: none;
+		box-sizing: border-box;
+	}
+
+}
+
+.container {
+	max-width: $container-width;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a {
+	color: inherit;
+
+	&:hover {
+		color: $color-light;
+	}
+}
+
+p {
+	color: inherit;
+	font: $text-font;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"] {
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+
+	font: $button-font;
+
+	min-height: $finger-size;
+	max-width: 100%;
+	padding: 0 20px;
+	margin-bottom: 10px;
+
+	border: $button-border-width solid $button-border-color;
+	border-radius: $button-border-radius;
+
+	background-color: $button-bg-color;
+	color: $button-text-color;
+
+	&:hover {
+		background-color: $color-light;
+		color: $bg-color;
+	}
+
+	&.full {
+		width: 100%;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+	min-height: $finger-size;
+	max-width: 100%;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+
+	font: $input-font;
+
+	border: $input-border-width solid $input-border-color;
+	border-radius: $input-border-radius;
+
+	background-color: $input-bg-color;
+	color: $input-text-color;
+
+	&::placeholder {
+		color: $color-light;
+	}
+
+	&.large {
+		font-size: $font-size-largest;
+		padding: 10px 20px;
+	}
+
+	&.full {
+		width: 100%;
+	}
+
+}
+
+textarea {
+	height: auto;
+	width: 100%;
+	padding: 20px;
+}
+
+select {
+	cursor: pointer;
+}
+
+.disabled,
+[disabled] {
+	opacity: 0.5;
+	pointer-events: none;
+	user-select: none;
+	cursor: not-allowed;
+}
+
+h1, .h1-size,
+h2, .h2-size,
+h3, .h3-size,
+h4, .h4-size,
+h5, .h5-size,
+h6, .h6-size {
+	color: inherit;
+	font: $title-font;
+}
+
+h2, .h2-size {
+	font-size: #{$title-font-size * 0.9};
+	line-height: normal;
+	font-weight: normal;
+}
+
+h3, .h3-size {
+	font-size: #{$title-font-size * 0.8};
+	line-height: normal;
+	font-weight: normal;
+}
+
+h4, .h4-size {
+	font-size: #{$title-font-size * 0.7};
+	line-height: normal;
+	font-weight: normal;
+}
+
+h5, .h5-size {
+	font-size: #{$title-font-size * 0.6};
+	line-height: normal;
+	font-weight: normal;
+}
+
+h6, .h6-size {
+	font-size: #{$title-font-size * 0.5};
+	line-height: normal;
+	font-weight: normal;
+}
+
+figure {
+	margin: 0;
+
+	& > img {
+		max-width: 100%;
+	}
+
+}
+
+main {
+	min-height: calc(100vh - #{$header-height + $footer-height});
+
+	& > section {
+		min-height: 400px;
+		//min-height: calc(100vh - #{$header-height + $footer-height}); // Use this if all the section heights are the same as window height
+
+		ul {
+
+			& > li {
+				color: $text-color;
+				font: $text-font;
+			}
+
+		}
+
+	}
+
+}
+
+.text {
+
+	&-color {
+
+		&-dark {
+			color: $color-dark;
+		}
+
+		&-darker {
+			color: $color-darker;
+		}
+
+		&-darkest {
+			color: $color-darkest;
+		}
+
+		&-light {
+			color: $color-light;
+		}
+
+		&-lighter {
+			color: $color-lighter;
+		}
+
+		&-lightest {
+			color: $color-lightest;
+		}
+
+	}
+
+	&-transform {
+
+		&-capitalize {
+			text-transform: capitalize;
+		}
+
+		&-uppercase {
+			text-transform: uppercase;
+		}
+
+	}
+
+}
+
+.font {
+
+	&-primary {
+		font-family: $primary-font-family;
+	}
+
+	&-secondary {
+		font-family: $secondary-font-family;
+	}
+
+	&-size {
+
+		&-smaller {
+			font-size: $font-size-smaller;
+		}
+
+		&-small {
+			font-size: $font-size-small;
+		}
+
+		&-large {
+			font-size: $font-size-large;
+		}
+
+		&-larger {
+			font-size: $font-size-larger;
+		}
+
+		&-largest {
+			font-size: $font-size-largest;
+		}
+
+	}
+
+}
